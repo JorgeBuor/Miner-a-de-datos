@@ -6,8 +6,8 @@ This dataset was created as part of Activity I for the Data Mining course at Uni
 
 ## Repository Structure
 ```
-├── student_dropout_dataset.csv   # Synthetic dataset (550 records)
-├── generate_dataset.py           # Python script used to generate the dataset
+├── student dropout dataset.csv   # Synthetic dataset (550 records)
+├── generate dataset.py           # Python script used to generate the dataset
 └── README.md                     # Dataset documentation
 ```
 
@@ -31,14 +31,14 @@ Universities face high dropout rates in undergraduate programs. The goal is to b
 |---|---|---|---|
 | `age` | Numeric | Student age at enrollment | 16–30 |
 | `gender` | Categorical | Student gender | Male, Female, Other |
-| `city_origin` | Categorical | City where the student comes from | Barranquilla, Bogotá, Medellín, Cali, Other |
-| `hs_gpa` | Numeric | High school grade point average | 2.5–5.0 |
-| `admission_score` | Numeric | Admission test score | 200–500 |
-| `first_sem_gpa` | Numeric | First semester GPA at university | 1.5–5.0 |
-| `socioeconomic_level` | Numeric | Socioeconomic stratum | 1–6 |
+| `city origin` | Categorical | City where the student comes from | Barranquilla, Bogotá, Medellín, Cali, Other |
+| `hs gpa` | Numeric | High school grade point average | 2.5–5.0 |
+| `admission score` | Numeric | Admission test score | 200–500 |
+| `first sem gpa` | Numeric | First semester GPA at university | 1.5–5.0 |
+| `socioeconomic level` | Numeric | Socioeconomic stratum | 1–6 |
 | `scholarship` | Categorical | Whether the student has a scholarship | Yes, No |
 | `loan` | Categorical | Whether the student has a student loan | Yes, No |
-| `financial_aid` | Categorical | Whether the student receives financial aid | Yes, No |
+| `financial aid` | Categorical | Whether the student receives financial aid | Yes, No |
 | `dropout` | Categorical (Target) | Whether the student dropped out | Yes, No |
 
 ---
@@ -67,12 +67,12 @@ Null values were introduced randomly to simulate real-world data quality issues.
 | Column | Null Count (approx.) |
 |---|---|
 | `age` | ~27 |
-| `hs_gpa` | ~25 |
-| `admission_score` | ~27 |
-| `first_sem_gpa` | ~26 |
-| `socioeconomic_level` | ~27 |
+| `hs spa` | ~25 |
+| `admission score` | ~27 |
+| `first sem gpa` | ~26 |
+| `socioeconomic level` | ~27 |
 
-Categorical columns (`gender`, `city_origin`, `scholarship`, `loan`, `financial_aid`, `dropout`) contain no null values.
+Categorical columns (`gender`, `city origin`, `scholarship`, `loan`, `financial aid`, `dropout`) contain no null values.
 
 ---
 
@@ -83,8 +83,8 @@ A total of **15 records** were manually modified to introduce outlier values, si
 | Column | Outlier Values Introduced |
 |---|---|
 | `age` | 5, 65, 70 |
-| `hs_gpa` | 0.5, 5.8, 6.2 |
-| `first_sem_gpa` | 0.2, 5.9, 6.5 |
+| `hs gpa` | 0.5, 5.8, 6.2 |
+| `first sem gpa` | 0.2, 5.9, 6.5 |
 
 These outliers fall outside the expected valid ranges and should be handled during the data preprocessing phase.
 
@@ -99,10 +99,10 @@ pip install pandas numpy
 
 Run the script:
 ```bash
-python generate_dataset.py
+python generate dataset.py
 ```
 
-This will produce `student_dropout_dataset.csv` with 550 records.
+This will produce `student dropout dataset.csv` with 550 records.
 
 ---
 
