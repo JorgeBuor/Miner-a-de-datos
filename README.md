@@ -29,7 +29,7 @@ Universities face high dropout rates in undergraduate programs. The goal is to b
 
 | Variable | Type | Description | Range / Values |
 |---|---|---|---|
-| `age` | Numeric | Student age at enrollment | 16–30 |
+| `age` | Numeric | Student age at enrollment | 16–29 |
 | `gender` | Categorical | Student gender | Male, Female, Other |
 | `city origin` | Categorical | City where the student comes from | Barranquilla, Bogotá, Medellín, Cali, Other |
 | `hs gpa` | Numeric | High school grade point average | 2.5–5.0 |
@@ -67,7 +67,7 @@ Null values were introduced randomly to simulate real-world data quality issues.
 | Column | Null Count (approx.) |
 |---|---|
 | `age` | ~27 |
-| `hs spa` | ~25 |
+| `hs gpa` | ~25 |
 | `admission score` | ~27 |
 | `first sem gpa` | ~26 |
 | `socioeconomic level` | ~27 |
@@ -102,7 +102,7 @@ Run the script:
 python generate dataset.py
 ```
 
-This will produce `student dropout dataset.csv` with 550 records.
+This will produce `student dropout dataset.csv` with 550 records in the current directory.
 
 ---
 
@@ -124,7 +124,7 @@ The selected model is **Random Forest**, chosen for its:
 
 ## Author
 
-[Jorge Estiven Burgos Ortega ]
+[Jorge Estiven Burgos Ortega]
 
 **Course:** Data Mining
 **Institution:** Universidad de la Costa
